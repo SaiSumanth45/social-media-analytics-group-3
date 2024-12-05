@@ -50,11 +50,11 @@ This project is a comprehensive **batch data processing pipeline** designed to a
    git clone <repository_url>
 
 2. Install Dependencies:
-   '''powershell
+   ```powershell
    pip install -r requirements.txt
    
 3. run the application
-   '''powershell
+   ```powershell
    streamlit app.py  
 
 
