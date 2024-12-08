@@ -51,7 +51,7 @@ def check_path_exists(path, step_name, is_folder=False):
 config = load_config()
 
 # Streamlit UI
-st.title("Social Media Analytics Configuration")
+st.title("Batch Processing for Social Media Analytics Configuration")
 
 st.header("Twitter API Settings")
 query = st.text_input(
@@ -140,7 +140,7 @@ if st.button("Run Pipeline"):
 
     st.success("Pipeline executed successfully.")
 
-st.title("Power BI Report in Streamlit")
+st.title("Power BI Report of Processed data")
 
 # Power BI embed link (replace with your link)
 embed_url = "https://app.powerbi.com/reportEmbed?reportId=505cd622-7df4-4329-bf18-9eca744f2daa&autoAuth=true&ctid=0d85160c-5899-44ca-acc8-db1501b993b6"
