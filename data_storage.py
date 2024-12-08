@@ -36,6 +36,11 @@ def upload_to_s3(local_path, bucket_name, s3_folder, aws_access_key, aws_secret_
                 print(f"Uploaded {file} to S3 at {s3_file_path}.")
             except Exception as e:
                 print(f"Failed to upload {file}: {str(e)}")
+
+    # Create a success file after uploading
+    success_file_path = os.path.join(current_directory, "s3_upload_success.txt")
+    with open(success_file_path, "w") as f:
+        f.write("File upload completed successfully.")
     print("File upload completed.")
 
 if __name__ == "__main__":
